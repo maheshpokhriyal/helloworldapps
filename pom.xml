@@ -22,6 +22,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+	
+   <distributionManagement>
+    <snapshotRepository>
+      <id>bluberrynexus</id>
+      <url>http://devops-ec2:8081/repository/devopsartifacts/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
     <build>
         <plugins>

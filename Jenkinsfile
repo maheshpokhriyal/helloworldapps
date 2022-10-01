@@ -37,8 +37,8 @@ pipeline {
  
 		stage('deploy artifacts') {
             steps {
-			    sh "cp ${WORKSPACE}/target/helloworldapp-1.0-SNAPSHOT.war /apps/tomcat/tomcat/webapps/helloworldapp.war"
-                sh "ls -ltr /apps/tomcat/tomcat/webapps/"
+			    sh "cp ${WORKSPACE}/target/helloworldapps-1.0-SNAPSHOT.war /usr/local/package/apache-tomcat-9.0.65/webapps/helloworldapps.war"
+                sh "ls -ltr /usr/local/package/apache-tomcat-9.0.65/webapps/"
             }
         }        
      
