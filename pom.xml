@@ -26,7 +26,7 @@
    <distributionManagement>
     <snapshotRepository>
       <id>bluberrynexus</id>
-      <url>http://devops-ec2:8081/repository/devopsartifacts/</url>
+      <url>http://3.133.102.147:8081/repository/devopsartifacts/</url>
     </snapshotRepository>
   </distributionManagement>
 
