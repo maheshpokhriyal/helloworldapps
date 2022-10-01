@@ -19,7 +19,7 @@ pipeline {
             MAVEN_HOME = tool 'maven3.6' // this is the name of maven configured on global configuration tool
           }        
           steps {
-             configFileProvider([configFile(fileId: '135f47ea-dde5-47cc-898f-9d1c498b42eb', variable: 'MAVEN_SETTINGS_XML')]) {
+             configFileProvider([configFile(fileId: '0801f489-05ab-4a46-8f86-db2fe12eba87', variable: 'MAVEN_SETTINGS_XML')]) {
              tool name: 'maven3.6', type: 'maven'
              sh "${MAVEN_HOME}/bin/mvn -s $MAVEN_SETTINGS_XML install clean deploy"
              } 
